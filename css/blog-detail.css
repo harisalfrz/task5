@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=REM:wght@200&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+      background-color: #d1dbe6b9;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e7e7e7ec;
+    padding: 0 60px;
+  }
+  
+  .nav-left ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-left a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .nav-left ul li {
+    margin-right: 30px;
+    font-size: 18px;
+  }
+
+  .nav-left ul li img {
+    margin: 0;
+    vertical-align: middle;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    background-color: black;
+    padding: 6px 20px;
+    border-radius: 6px;
+    color: white;
+  }
+
+  .nav-right a:hover {
+    background-color: rgb(255, 90, 34);
+    color: white;
+  }
+
+  .blog-post {
+    padding: 10px 300px;
+}
+
+.blog-post h1.title {
+    text-align: center;
+}
+
+.blog-post .banner {
+    display: flex;
+    
+}
+
+.blog-post .banner img {
+    width: 50%;
+    margin-right: 80px;
+}
+
+.banner .banner-text {
+    align-items: start;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+}
+
+.banner-text td {
+    font-size: 1.2em;
+    padding: 0 25px 25px 0;
+}
+
+.blog-post-content p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+    .blog-post {
+        padding: 10px;
+    }
+
+    .blog-post .banner {
+        display: grid;
+    }
+
+    .blog-post .banner img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=REM:wght@200&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+      background-color: #d1dbe6b9;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e7e7e7ec;
+    padding: 0 60px;
+  }
+  
+  .nav-left ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-left a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .nav-left ul li {
+    margin-right: 30px;
+    font-size: 18px;
+  }
+
+  .nav-left ul li img {
+    margin: 0;
+    vertical-align: middle;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    background-color: black;
+    padding: 6px 20px;
+    border-radius: 6px;
+    color: white;
+  }
+
+  .nav-right a:hover {
+    background-color: rgb(255, 90, 34);
+    color: white;
+  }
+
+  section.blog-form {
+    display: flex;
+    background-color: lavender;
+}
+
+section.blog-form .blog-form-container {
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+section.blog-form h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+section.blog-form label {
+    font-weight: 600;
+}
+
+
+section.blog-form #input-title-blog,
+/* #input-startdate-blog, */
+/* #input-enddate-blog, */
+#input-description-blog,
+/* #input-technologies-blog, */
+#input-upload-blog {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+section.blog-form .input-date-div {
+    display: flex;
+    box-sizing: border-box;
+    gap: 1em;
+    margin-bottom: 10px;
+}
+
+section.blog-form #input-startdate-blog {
+    width: 98%;
+}
+
+section.blog-form #input-enddate-blog {
+    width: 98%;
+}
+section.blog-form .input-technologies-div {
+    margin-bottom: 15px;
+}
+section.blog-form .input-technologies-div h4 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+section.blog-form .input-technologies-div .input-technology-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.blog-form .input-technologies-div .input-technology-div label {
+    margin-right: 20px;
+}
+
+/* #input-nodejs-blog,
+#input-nextjs-blog,
+#input-reactjs-blog,
+#input-typescript-blog {
+    margin-right: 10px;
+    flex: 20%;
+} */
+
+section.blog-form .input-upload-div input {
+    background-color: white;
+}
+
+section.blog-form .input-upload-div input#file-upload-button {
+    background-color: #fd4e2f;
+}
+
+.btn button {
+    background-color: #fd4e2f;
+    color: whitesmoke;
+    float: right;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn button:hover {
+    background-color: whitesmoke;
+    color: #fd4e2f;
+}
+
+/* Blog Content */
+/* section.blog-content {
+    margin: auto;
+} */
+
+
+section.blog-content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.blog-content .blog-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+}
+
+section.blog-content .blog-content-container .blog-content-card {
+    margin: 20px 10px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 20px #d5d5d5;
+    height: 620px;
+    width: 400px;
+    align-items: center;
+}
+
+section.blog-content .blog-content-container .blog-content-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+section.blog-content .blog-content-container .blog-content-card h2 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.blog-content-card h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.blog-content-card h2 a:hover {
+    text-decoration: underline;
+}
+
+.card-text span {
+    color: grey;
+}
+
+.card-text p {
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 15vh;
+}
+
+.input-technologies-div table tr td {
+    padding-right: 25px;
+}
+
+.card-techstack {
+    margin-bottom: 5px;
+}
+
+.card-techstack i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.card-techstack img {
+    width: 20px;
+    height: 20px;
+    background: url(https://i0.wp.com/reviveyouthandfamily.org/wp-content/uploads/2016/11/house-placeholder.jpg?ssl=1) no-repeat scroll 0 0;
+}
+
+.card-button {
+    display: flex;
+    gap: .5em;
+}
+
+.card-button button {
+    background-color: #fd4e2f;
+    color: white;
+    border: none;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.card-button button:hover {
+    background-color: white;
+    color: #fd4e2f;
+}
+
+@media screen and (max-width: 500px) {
+    section.blog-content .blog-content-container {
+        width: 100%;
+    }
+    section.blog-content .blog-content-container .blog-content-card {
+        width: 100%;
+    }
+}

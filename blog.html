@@ -1,0 +1,102 @@
+<html>
+    <head>
+    <title>Blog Haris</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body> 
+
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="images/logodw.png" alt="Logo"></a>
+                </li>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html">Contact me</a>
+        </div>
+    </nav> 
+
+    <main>
+        
+        <section class="blog-form">
+            <div class="blog-form-container">
+                <h1>Add My Project</h1>
+                <div class="blog-form-input">
+                    <form id="form-blog" onsubmit="addBlog(event)">
+                        <div class="input-title-div">
+                            <label for="input-title-blog">Title</label>
+                            <input type="text" id="input-title-blog" required>
+                        </div>
+                        <div class="input-date-div">
+                            <div class="input-startdate-div">
+                                <label for="input-startdate-blog">Start Date</label>
+                                <input type="date" id="input-startdate-blog">
+                            </div>
+                            <div class="input-enddate-div">
+                                <label for="input-enddate-blog">End Date</label>
+                                <input type="date" id="input-enddate-blog">
+                            </div>
+                        </div>
+                        <div class="input-description-div">
+                            <label for="input-description-blog">Description</label>
+                            <textarea name="input-description-blog" id="input-description-blog" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="input-technologies-div">
+                            <h4>Technologies</h4>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="input-nodejs-blog">
+                                        <label for="input-nodejs-blog">NodeJS</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="input-nextjs-blog">
+                                        <label for="input-nextjs-blog">NextJS</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="input-reactjs-blog">
+                                        <label for="input-reactjs-blog">ReactJS</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="input-typescript-blog">
+                                        <label for="input-typescript-blog">TypeScript</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="input-upload-div">
+                            <label for="input-upload-blog">Upload Image</label>
+                            <input type="file" id="input-upload-blog">
+                        </div>
+                        <div class="btn">
+                            <button class="submit-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+   
+        <section class="blog-content">
+            <h1>My Project</h1>
+            <div id="blog-content-form" class="blog-content-container"></div>
+            <div id="blog-content" class="blog-content-container"></div>
+        </section>
+    </main>
+    <script src="js/blog.js"></script>
+</body>
+</html>
